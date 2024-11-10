@@ -16,9 +16,23 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
-from blog import views as index_views
+from django.http import HttpResponse
+
+def home(request):
+    return HttpResponse("Welcome to the Home Page")
 
 urlpatterns = [
-    path('', index_views.index, name='index'),
     path('admin/', admin.site.urls),
+    path('blog/', include('blog.urls')),
+    path('', home, name='home'),  # Define a view for the root URL
+]
+
+from django.contrib import admin
+from django.urls import path, include
+from django.views.generic import RedirectView
+
+urlpatterns = [
+    path('admin/', admin.site.urls),
+    path('blog/', include('blog.urls')),
+    path('', RedirectView.as_view(url='/blog/', permanent=True)),  # Redirect root URL to /blog/
 ]
