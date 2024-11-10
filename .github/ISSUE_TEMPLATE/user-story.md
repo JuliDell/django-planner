@@ -7,4 +7,4 @@ assignees: ''
 
 ---
 
-Aa a **role** we can **capability** so that **receive benefit**
+As a **role** we can **capability** so that **receive benefit**
