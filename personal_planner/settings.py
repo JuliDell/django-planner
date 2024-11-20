@@ -23,9 +23,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-#wostne%dn_wvk*3d!djj5yjaast_(3vvnrj%_#k!935hrv6+e'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = ['8000-julidell-djangoplanner-fsqs3g9mahg.ws-eu116.gitpod.io']
+ALLOWED_HOSTS = ['8000-julidell-djangoplanner-fsqs3g9mahg.ws-eu116.gitpod.io','.herokuapp.com','8000-julidell-djangoplanner-brc3b3qdw9q.ws-eu116.gitpod.io']
 
 
 # Application definition
