@@ -1,0 +1,4 @@
+import os
+
+os.environ.setdefault(
+    "DATABASE_URL", "postgres://neondb_owner:fsCHYn9mki1E@ep-damp-resonance-a2c9r8sj.eu-central-1.aws.neon.tech/work_pulp_stage_528314")
